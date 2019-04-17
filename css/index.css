@@ -1,3 +1,172 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+header nav {
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 900px;
+	box-shadow: 0 4px 4px lightgray;
+}
+
+header nav a {
+	margin: 25px 25px 25px 0;
+	padding: 15px;
+	text-decoration: none;
+	color: gray;
+}
+
+.cta {
+	margin-top: 150px;
+	margin-bottom: 50px; 
+	display: flex;
+}
+
+.cta-text {
+	width: 880px;
+	padding: 30px;
+}
+
+.cta-text h1.heading {
+	font-size: 90px;
+	text-align: center;
+}
+
+.cta-text button {
+	background: dodgerblue;
+	border: 1px solid black;
+	border-radius: 4px;
+	background-color: white;
+	cursor: pointer;
+	padding: 5px 30px;
+	font-size: 16px;
+	text-align: center;
+	margin-left: 35%;
+	-webkit-transition-duration: 0.4s;
+  	transition-duration: 0.4s;
+} 
+
+.cta-text button:hover {
+	background-color: dodgerblue;
+  	color: white;
+}
+
+.main-content {
+	margin-top: 20px;
+	display: inline-block;
+	
+}
+
+.top-content .text-content {
+	width: 50%;
+	float: left;	
+}
+
+.top-content {
+	border-top: 1px solid black;
+	padding: 20px 0;
+}
+
+.middle-img {
+	width: 100%;
+	height: 200px;
+	margin: 30px 0;
+}
+
+.bottom-content {
+	width: 100%;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.bottom-content .text-content {
+	width: 32%;
+	float: left;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+section.contact {
+	margin: 30px 0;
+	border-top: 1px solid black;
+}
+
+.contact h3 {
+	margin-top: 20px;
+}
+
+footer{
+	margin: 100px;
+	text-align: center;
+}
 

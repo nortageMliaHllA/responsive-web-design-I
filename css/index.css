@@ -66,6 +66,20 @@ h1, h2, h3, h4, h5 {
 	margin: auto;
 }
 
+@media(max-width: 800px) {
+    .container {
+		background: dodgerblue;
+		color: white;
+    }
+}
+
+@media(max-width: 500px) {
+	.container {
+	  background: crimson;
+	  color: black;
+	}
+  }
+
 header nav {
 	position: fixed;
 	top: 0px;
@@ -78,12 +92,38 @@ header nav {
 	box-shadow: 0 4px 4px lightgray;
 }
 
+@media(max-width:800px) {
+	header nav {
+	  box-shadow: none;
+	  background: dodgerblue;
+	}
+  }
+
+@media(max-width:500px) {
+	header nav {
+	  box-shadow: none;
+	  background: crimson;
+	}
+  }
+
 header nav a {
 	margin: 25px 25px 25px 0;
 	padding: 15px;
 	text-decoration: none;
 	color: gray;
 }
+
+@media(max-width:800px) {
+	header nav a {
+	  color: white;
+	}
+  }
+
+@media(max-width:500px) {
+	header nav a {
+	  color: black;
+	}
+  }
 
 .cta {
 	margin-top: 150px;
@@ -115,15 +155,32 @@ header nav a {
   	transition-duration: 0.4s;
 } 
 
+@media(max-width:800px) {
+	.cta-text button {
+	  border: 1px solid white;
+	}
+  }
+
+@media(max-width:500px) {
+	.cta-text button {
+	  border: 1px solid black;
+	  background: crimson;
+	}
+  }
+
 .cta-text button:hover {
 	background-color: dodgerblue;
   	color: white;
+
+@media (max-width:500px) {
+	.cta-text button:hover {
+		background-color: crimson;
+	}
 }
 
 .main-content {
 	margin-top: 20px;
 	display: inline-block;
-	
 }
 
 .top-content .text-content {

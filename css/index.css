@@ -221,17 +221,28 @@ footer{
 		width: 100%;
 	}
 	header nav {
-		align-content: space-around;
 		flex-direction: column;
 		box-shadow: none;
-		width: 90%;
+		width: 100%;
 		margin: 30px 0 30px 30px;
 	}
 
+	header nav a {
+		border-bottom: 1px solid black;
+		padding: 0 200px;
+		margin: 30px 0 0 0;
+		width: 100%;
+		align-self: center;
+	}
+
+	
 	.logo {
 		position: absolute;
 		z-index: 3;
 		top: 30px;
+		border-bottom: 1px solid black;
+		padding: 0 144px;
+	
 	}
 
 	.heading-img {
@@ -260,6 +271,7 @@ footer{
 	.top-content .text-content {
 		width: 90%;
 		margin: 30px 0 30px 30px;
+		padding: 0 20px;
 	}
 
 	.middle-img {
